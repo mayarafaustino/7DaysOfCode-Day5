@@ -15,8 +15,12 @@ input, select {
     padding: .25rem 1rem;
     border-radius: 8px;
 }
+.box-button {
+    margin: 1rem;
+    
+}
 button {
-    padding: .25rem 2rem;
+    padding: .25rem 3rem;
     border-radius: 8px;
     border: 2px solid #f0bb2a;
     color: #f1f1f1;
@@ -26,11 +30,23 @@ button:hover {
     color: #0d0d0d;
     background-color: #f0bb2a;
 }
+#botao-remover {
+    border: 2px solid #1f1f1d;
+    padding: .25rem .5rem;
+}
+#botao-remover:hover {
+    border: 2px solid #f0bb2a;
+}
 #lista {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 2rem;
+}
+#aviso {
+    margin: 1rem auto;
+    color: #f0bb2a;
+    font-size: 14px;
 }
 ul {
     background-color: #131312;

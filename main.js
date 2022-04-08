@@ -30,6 +30,7 @@ var listaDeCompras = [
 
 
 const divLista = document.getElementById("lista");
+const divAviso = document.getElementById("aviso");
 
 
 
@@ -60,5 +61,22 @@ function mostrarLista() {
         const fimLista = `</ul>`
         divLista.innerHTML += fimLista;
 
+    }
+}
+
+function removerItem() {
+    const nomeItem = document.getElementById("item").value;
+    const categoriaItem = document.getElementById("categoria").value;
+    const indiceElementoRemover = listaDeCompras[categoriaItem].itens.indexOf(nomeItem);
+    if (indiceElementoRemover != -1){
+        listaDeCompras[categoriaItem].itens.splice(indiceElementoRemover, 1);
+        divLista.innerHTML = "";
+        document.getElementById("item").value = "";
+        mostrarLista();
+    } else {
+        const msg = `item não encontrado na categoria selecionada`;
+        divAviso.innerHTML = msg;
+        divLista.innerHTML = "";
+        mostrarLista();
     }
 }

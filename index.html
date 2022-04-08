@@ -24,13 +24,17 @@
             <option value="4">congelados</option>
             <option value="5">frutas e verduras</option>
         </select>
-        <button type="button" onclick="adicionarItem()">Adicionar</button>
+        <div class="box-button">
+            <button type="button" id="botao-remover" onclick="removerItem()">Remover</button>
+            <button type="button" onclick="adicionarItem()">Adicionar</button>
+
+        </div>
         
     </form>
-    <!-- <button type="button" onclick="mostrarLista()">Mostrar lista</button> -->
-    <div id="lista">
-        
-    </div>
+    
+
+    <div id="aviso"></div>
+    <div id="lista"></div>
 
 
     <script src="./main.js"></script>
