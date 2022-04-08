@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7DaysOfCode - Day5</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Sua lista de compras</h1>
+
+    <form action="">
+        <label for="item">Nome do item:</label>
+        <input type="text" id="item" required>
+        <label for="categoria">Categoria:</label>
+        <select name="categoria" id="categoria" required>
+            <option value="0">grãos</option>
+            <option value="1">molhos</option>
+            <option value="2">massas</option>
+            <option value="3">laticínios</option>
+            <option value="4">congelados</option>
+            <option value="5">frutas e verduras</option>
+        </select>
+        <button type="button" onclick="adicionarItem()">Adicionar</button>
+        
+    </form>
+    <!-- <button type="button" onclick="mostrarLista()">Mostrar lista</button> -->
+    <div id="lista">
+        
+    </div>
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
